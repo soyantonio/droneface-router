@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  droneface-router:
+    build:
+      context: .
+      dockerfile: ./dockerfile
+    command: sh -c "${COMMAND}"
+    env_file: .env
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
+    volumes:
+      - .:/usr/app
