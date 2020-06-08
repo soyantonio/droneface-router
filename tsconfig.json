@@ -7,5 +7,14 @@
         "target": "es6",
         "allowSyntheticDefaultImports": true,
         "jsx": "react"
-    }
+    },
+    "include": [
+        "./src/**/.*.tsx",
+        "./src/**/*"
+    ],
+    "exclude": [
+        "./node_modules/**/*",
+        "./webpack.*.js",
+        "./webpack/*.js",
+    ]
 }
