@@ -1,9 +1,12 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
-
-import { Hello } from "./components/Hello";
+import React from "react";
+import ReactDOM from "react-dom";
+import GlobalStyle from 'src/globalStyle'
+import App from 'src/views/App'
 
 ReactDOM.render(
-    <Hello compiler="TypeScript" framework="React"  />,
+    <>
+        <App />
+        <GlobalStyle />
+    </>,
     document.getElementById("root")
 );

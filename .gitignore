@@ -6,3 +6,4 @@ dist/*
 .firebaserc
 firebase.json
 firebase-debug.log
+yarn-error.log

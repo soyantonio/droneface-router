@@ -45,6 +45,8 @@ const rules = [
 	}
 ];
 
+const node_path = process.cwd()
+const valid_resolvers = node_path.split(path.delimiter).filter(Boolean)
 
 module.exports = {
 	entry: './src/index',
@@ -54,6 +56,7 @@ module.exports = {
     publicPath: '/'
   },
   resolve: {
+    modules: ['node_modules'].concat(valid_resolvers),
     extensions: ['.ts', '.tsx', '.js']
   },
   module: {
