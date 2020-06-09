@@ -1,5 +1,7 @@
 # Droneface Router
 
+![droneface](doc/droneface.jpeg)
+
 Deploy to firebase, init a project of hosting type. Select dist as default folder
 ```bash
 firebase init
